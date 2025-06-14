@@ -888,4 +888,8 @@ function simulateOrderTracking(orderId) {
             if (index < stages.length - 1) {
                 showNotification(`Order #${orderId}: ${stage.status}`, 'info');
             } else {
-                showNotification(`Order #${orderId}: ${stage.status!
+                showNotification(`Order #${orderId}: ${stage.status}`, 'success');
+            }
+        }, stage.time);
+    });
+}
